@@ -34,11 +34,3 @@ data_sum2 <- data_sum %>%
                                Foraging == "TRUE" ~ "foraging")) 
   
 data_sum2$activity<- as.factor(data_sum2$activity)
-
-data_sum=NULL
-
-# Removes the rows in Data frame
-# which consist "Ra" in it
-
-data_sum2=data_sum2[!grepl("?",data_sum2$Age),]
-print(data_sum2)
