@@ -14,6 +14,7 @@ library(summarytools) # RESUMEN DE LAS VARIABLES (niveles, freq, graph, missing 
 #create a subset with (possibly) interesting variables
 data_sum <- data %>% select(X, 
                             Y,
+                            `Unique Squirrel ID`,
                             Shift,
                             Date,
                             Age, 
@@ -23,13 +24,23 @@ data_sum <- data %>% select(X,
 dfSummary(data_sum)
 
 #create var "activity" - what was the sq doing at moment of obs.?
+
+#var for +1 activity
 data_sum2 <- data_sum %>% 
   mutate(activity = case_when (Running == 'TRUE' ~ 'running',
                                Chasing == "TRUE" ~ "chasing",
                                Climbing == "TRUE" ~ "climbing",
                                Eating == "TRUE" ~ "eating",
-                               Foraging == "TRUE" ~ "foraging"))
-
-glimpse(data_sum2)
+                               Foraging == "TRUE" ~ "foraging")) 
+  
 data_sum2$activity<- as.factor(data_sum2$activity)
+
+data_sum=NULL
+
+data_sum2 <- data_sum2 %>% rename(data_sum2,
+  id = "Unique Squirrel ID",
+  runs = "Runs from"
+)
+
+variable.names(data_sum2)
 
