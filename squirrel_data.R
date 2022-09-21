@@ -37,10 +37,8 @@ data_sum2$activity<- as.factor(data_sum2$activity)
 
 data_sum=NULL
 
-data_sum2 <- data_sum2 %>% rename(data_sum2,
-  id = "Unique Squirrel ID",
-  runs = "Runs from"
-)
+# Removes the rows in Data frame
+# which consist "Ra" in it
 
-variable.names(data_sum2)
-
+data_sum2=data_sum2[!grepl("?",data_sum2$Age),]
+print(data_sum2)
