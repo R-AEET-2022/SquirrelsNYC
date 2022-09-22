@@ -1,0 +1,32 @@
+---
+title: "Cuando y donde comen la ardilla de las Carolinas (Sciurus carolinensis) en NY?"
+author: "Irene Repeto & Álvaro Pérez"
+date: "`r Sys.Date()`"
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introducción
+
+Es muy importante conocer cuándo y dónde comen las ardillas, para que cuando se suplemente alimento puedan comer sin que otros animales se lo hayan comido antes.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sciurus_carolinensis_-_2012-07-13.jpg/800px-Sciurus_carolinensis_-_2012-07-13.jpg)
+
+## Metodología
+
+-   DFKNKLDFNGK
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
