@@ -11,13 +11,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Introducción
 
-Es muy importante conocer cuándo y dónde comen las ardillas, para que cuando se suplemente alimento puedan comer sin que otros animales se lo hayan comido antes.
+La ardilla gris es nativa de norte américa, pero fue introducida en Europa donde se comporta como especie invasora, desplazando a la ardilla roja. Por ello, es importante conocer sus hábitos alimenticios, para poder poner trampas en su horario y lugar de alimentación sin que afecte a otros organismos.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sciurus_carolinensis_-_2012-07-13.jpg/800px-Sciurus_carolinensis_-_2012-07-13.jpg)
 
 ## Metodología
 
--   DFKNKLDFNGK
+Hemos ajustado modelos binomiales. El modelo que mejor se ajusta es:
+
+sq \<- glm(Eating \~ Shift+Location, data = data_sum3, family = binomial
+
+|     |
+|-----|
 
 ## Slide with R Output
 
