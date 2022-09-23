@@ -45,6 +45,7 @@ sq <- glm(Eating ~ Shift+Location,
           family = binomial)
 summary(sq)
 library(report)
+report(sq)
 
 residuals(sq)
 plot(sq)
@@ -72,7 +73,7 @@ sq3 <- glm(Eating ~ Location*Shift,
           family = binomial)
 summary(sq3)
 
-AIC(sq, sq1, sq2, sq3, sq4)
+AIC(sq, sq1, sq2, sq3)
 
 
 library("effects")
@@ -91,3 +92,4 @@ library("DHARMa")
 simulateResiduals(sq, plot = TRUE)
 library(performance)
 check_predictions(sq)
+
