@@ -1,0 +1,26 @@
+---
+title: "Cuando y donde comen la ardilla de las Carolinas (Sciurus carolinensis) en NY?"
+author: "Irene Repeto & Álvaro Pérez"
+date: "`r Sys.Date()`"
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introducción
+
+La ardilla gris es nativa de norte américa, pero fue introducida en Europa donde se comporta como especie invasora, desplazando a la ardilla roja. Por ello, es importante conocer sus hábitos alimenticios, para poder poner trampas en su horario y lugar de alimentación sin que afecte a otros organismos (Pepito et al., 2022).
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Eastern_Grey_Squirrel_in_St_James%2527s_Park%252C_London_-_Nov_2006_edit.jpg/1200px-Eastern_Grey_Squirrel_in_St_James%2527s_Park%252C_London_-_Nov_2006_edit.jpg)
+
+## Metodología
+
+## Effects
+
+![](images/plot_zoom-01.png)
+
+## DHARMa residual
+
+![](images/plot_zoom1.png)

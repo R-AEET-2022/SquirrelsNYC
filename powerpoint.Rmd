@@ -21,17 +21,20 @@ Hemos ajustado modelos binomiales. El modelo que mejor se ajusta es:
 
 sq \<- glm(Eating \~ Shift+Location, data = data_sum3, family = binomial
 
-|     |
-|-----|
-
-## Slide with R Output
+## Effects
 
 ```{r cars, echo = TRUE}
-summary(cars)
+library("effects")
+
+allEffects(sq)
+plot(allEffects(sq))
 ```
 
 ## Slide with Plot
 
 ```{r pressure}
-plot(pressure)
+library("DHARMa")
+simulateResiduals(sq, plot = TRUE)
 ```
+
+\`\`\`

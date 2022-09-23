@@ -77,6 +77,7 @@ AIC(sq, sq1, sq2, sq3)
 
 
 library("effects")
+
 allEffects(sq)
 plot(allEffects(sq))
 
